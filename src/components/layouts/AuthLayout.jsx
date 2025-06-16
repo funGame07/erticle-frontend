@@ -5,13 +5,13 @@ import { FcGoogle } from "react-icons/fc";
 
 import { Link, useNavigate } from 'react-router-dom';
 import './authLayout.css'
-import axios from 'axios';
+import axiosAuth from '../../api/axios';
 
 function AuthLayout({children, title, type}) {
   const navigate = useNavigate()
 
   async function handleGoogleOauth(){
-    const response = await axios.get('http://localhost:3000/auth/google', {
+    const response = await axiosAuth.get('/google', {
       withCredentials: true
     })
     const data = response.data
