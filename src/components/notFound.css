@@ -1,0 +1,11 @@
+#resource__notfound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: gray;
+}
+#resource__notfound img{
+    width: clamp(200px, 200px + 10vh, 600px);
+}

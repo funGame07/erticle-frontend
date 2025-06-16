@@ -1,0 +1,20 @@
+.footer{
+    display: none;
+}
+
+.missing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    z-index: 1;
+}
+
+.missing .missing__header{
+    font-size: 3rem;
+}
+
+.missing__link{
+    text-decoration: underline;
+}

@@ -1,0 +1,115 @@
+.article_card{
+    position: relative;
+    min-width: 200px;
+    width: 100%;
+    max-width: 600px;
+
+    /* width: clamp(320px, 320px + 20vw, 800px); */
+    /* height: 200px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .2rem;
+    overflow: hidden;
+    transition: .2s transform;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.article_card:hover{
+    box-shadow: 0 0 .3rem 0 rgba(0,0,0, .4);
+    transform: translateY(-.1rem);
+    filter: brightness(.8);
+}
+
+.card__content__img{
+    min-width: 100px;
+    width: calc(70px + 20vw);
+    max-width: 120px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+.card__img{
+    width: 100%;
+    min-height: 60px;
+    height: calc(30px + 10vw);
+    max-height: 80px;
+}
+.card__img img{
+    object-fit: cover;
+}
+
+.article_card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__content{
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content__top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    justify-content: space-between;
+    font-size: 1.2rem;
+    opacity: .8;
+}
+
+.content__top h3{
+    font-size: clamp(.6rem, .6rem + 2vw, 1.5rem);
+    line-height: clamp(.9rem, .9rem + 2vw, 1.5rem);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+}
+.author span{
+    font-size: .8rem;
+}
+.author img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.content__mid{
+    padding: .2rem 0;
+    flex-grow: 1;
+    line-height: 1rem;
+    font-size: .9rem;
+    opacity: .5;
+    margin-top: .5rem;
+}
+
+.content__bottom{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    font-size: .7rem;
+    gap: .5rem;
+    margin-top: .5rem;
+    opacity: .5;
+}
+
+@media screen and (max-width: 480px){
+    .article_card{
+        width: 100%;
+    }
+}

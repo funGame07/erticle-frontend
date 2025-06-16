@@ -1,0 +1,33 @@
+.searchbar{
+    position: relative;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+#search__input{
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    outline: none;
+    padding: .5rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    width: 100%;
+}
+#search__input:focus{
+    border: 2px solid rgba(0, 0, 0, 0.5)
+}
+
+.seach__icon{
+    position: absolute;
+    border-width: 3px;
+    left: .5rem;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+@media screen and (max-width: 480px){
+    .searchbar{
+        width: 100%;
+    }
+}

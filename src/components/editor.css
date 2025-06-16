@@ -1,0 +1,47 @@
+#editor{
+    position: absolute;
+}
+
+#editor #editor__icon{
+    cursor: move;
+    color: white;
+    background-color: rgb(71, 120, 255);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+#editor__menu{
+    display: none;
+    position: absolute;
+    transition: .5s ease;
+    border: 1px solid rgb(208, 208, 208);
+    top: 0;
+    right: 45px;
+}
+
+.editor__menu__wrapper{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    text-align: center;
+    font-weight: 500;
+    gap: 1rem;
+    padding: .5rem;
+    padding-right: 1.5rem;
+    white-space: nowrap;
+    background-color: white;
+}
+.editor__menu__wrapper:hover{
+    background-color: #e0e0e0;
+}
+.editor__menu__wrapper span{
+    /* line-height: 1rem; */
+    font-weight: 600;
+    opacity: 1;
+}

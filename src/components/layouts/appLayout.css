@@ -1,0 +1,16 @@
+#appLayout{
+    display: flex;
+    min-height: 100vh;
+}
+
+#main{
+    flex-grow: 1;
+    padding: .5rem;
+    position: relative;
+}
+
+@media screen and (max-width: 480px) {
+    #appLayout{
+        flex-direction: column;
+    }
+}

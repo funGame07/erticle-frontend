@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500..800&display=swap');
+
+/* RESET CSS */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: "Ysabeau SC", serif; */
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  box-sizing: border-box;
+
+  /* font-style: normal; */
+  font-optical-sizing: auto;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  --BG-SIDEBAR: #f0f0f0;
+  --FONT-SIDEBAR: #151A2D;
+  --HOVER-SIDEBAR: #dde4fb;
+
+  --BG-CONTAINER: #fff;
+
+  --HOVER-BUTTON: #dde4fb;
+
+  /* light theme */
+  --BG-CONTAINER: #fefefe;
+  --COLOR-CONTAINER: #151A2D;
+
+  --BG-PROFILE: #ffffff;
+  --COLOR-PROFILE: #151A2D;
+  --BUTTON-OUTLINE-HOVER: #151A2D;
+  --COLOR-TEXTAREA-PROFILE: #151A2D;
+  --aside-color: rgba(218, 210, 210, 0.4);
+}
+
+body{
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.root{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.no-wrap{
+  white-space: nowrap;
+}
+
+.svg{
+  display: block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.icon{
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: var(--aside-color);
+}
+
+.smaller-icon{
+  font-size: 1rem;
+}
+  
+
+/* 
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+

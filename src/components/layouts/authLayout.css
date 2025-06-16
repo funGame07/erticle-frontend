@@ -1,0 +1,134 @@
+.auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(320px, 300px + 15vw, 80%);
+    border: 1px solid rgba(0, 0, 0, 0.265);
+    border-radius: .2rem;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    background-color: #fff;
+}
+
+.auth__title{
+    text-align: start;
+    font-size: 1.8rem;
+}
+
+#auth__form{
+    display: flex;
+    flex-direction: column;
+    width: clamp(260px, 300px + 15vw, 80%);
+}
+#auth__form label{
+    font-size: .8rem;
+    font-weight: 600;
+    opacity: .5;
+    margin-top: 1rem;
+}
+
+.auth__input{
+    position: relative;
+    width: 100%;
+    height: 2rem;
+}
+
+#auth__form input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(154, 154, 154);
+    padding-left: 2rem;
+    font-size: .9rem;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.input__icon{
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+#auth__form input:focus{
+    border-bottom: 2px solid #666;
+}
+
+.auth__forgotpassword{
+    padding: .5rem;
+    font-size: .9rem;
+    text-align: end;
+    color: #4285F4;
+}
+
+#err_message{
+    color: red;
+    font-size: .8rem;
+}
+
+.auth__submit-form{
+    margin-top: 1.5rem;
+    padding: .7rem 2rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(71, 111, 255);
+    transition: color .2s;
+    color: white;
+}
+.auth__submit-form:hover{
+    background-color: rgb(39, 86, 255);
+}
+
+.divider{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.divider span{
+    position: relative;
+    top: -2px;
+}
+.line{
+    height: 1px;
+    width: 30%;
+    background-color: #000;
+}
+
+.auth__oauth{
+    cursor: pointer;
+    width: clamp(255px, 300px + 15vw, 80%);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .5rem;
+    gap: .6rem;
+    /* background-color: #4285F4; */
+    /* color: #fff; */
+}
+.auth__oauth span{
+    font-size: .9rem;
+}
+.oauth__logo{
+    /* background-color: #fff; */
+    
+    display: flex;
+    align-items: center;
+}
+
+.auth__reminder{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: .8rem;
+}
+.reminder__link{
+    color: #4285F4;
+    text-decoration: underline;
+}
+
