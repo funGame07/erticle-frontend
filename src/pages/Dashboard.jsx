@@ -1,7 +1,8 @@
 
 import { useEffect } from 'react'
 import BaseLayout from '../components/layouts/BaseLayout'
-import Header from '../components/Header.jsx'
+
+import { Link } from 'react-router-dom'
 
 import url from '../utils/urlConstants'
 
@@ -38,19 +39,19 @@ function Dashboard() {
                   <h1>Where Stories Come Alive</h1>
                   <p class="idx-hero-subtitle">Discover, create, and share extraordinary stories with a global community of passionate writers and readers. Your voice matters.</p>
                   <div class="idx-hero-cta">
-                      <a href={url.create} class="idx-btn idx-btn-primary">
+                      <Link to={url.create} class="idx-btn idx-btn-primary">
                           Start Creating
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                               <path d="M5 12h14M12 5l7 7-7 7"/>
                           </svg>
-                      </a>
-                      <a href={url.articles} class="idx-btn idx-btn-secondary">
+                      </Link>
+                      <Link to={url.articles} class="idx-btn idx-btn-secondary">
                           Explore Stories
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                               <circle cx="11" cy="11" r="8"/>
                               <path d="m21 21-4.35-4.35"/>
                           </svg>
-                      </a>
+                      </Link>
                   </div>
                   <div class="idx-stats">
                       <div class="idx-stat-item">
@@ -114,19 +115,19 @@ function Dashboard() {
                   <h2 class="idx-cta-title">Ready to Begin?</h2>
                   <p class="idx-cta-subtitle">Join thousands of storytellers who've already discovered their voice on Zenith.</p>
                   <div class="idx-hero-cta">
-                      <a href={url.home} class="idx-btn idx-btn-primary">
+                      <Link to={url.home} class="idx-btn idx-btn-primary">
                           Start Your Journey
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                               <path d="M5 12h14M12 5l7 7-7 7"/>
                           </svg>
-                      </a>
-                      <a href="#" class="idx-btn idx-btn-secondary">
+                      </Link>
+                      <Link to="#" class="idx-btn idx-btn-secondary">
                           Learn More
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                               <circle cx="12" cy="12" r="10"/>
                               <path d="M9 12l2 2 4-4"/>
                           </svg>
-                      </a>
+                      </Link>
                   </div>
               </div>
           </div>
