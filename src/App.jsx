@@ -1,6 +1,6 @@
 import {Routes, Route } from 'react-router-dom'
 
-import Index from './pages/Index'
+import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
 import Articles from './pages/Articles'
 import Missing from './pages/Missing'
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
           <Routes>
-            <Route path='/' element={<Index />}/>
+            <Route path='/' element={<Dashboard />}/>
             <Route path='/home' element={<Home />}/>
             <Route path='/articles'element={<Articles />}/>
             <Route path='/bookmarks'element={<Bookmarks />}/>

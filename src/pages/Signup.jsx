@@ -42,6 +42,7 @@ function Signup() {
     setIsAuth(true)
     
     const prevLocation = localStorage.getItem('location');
+    localStorage.removeItem('location')
     navigate(prevLocation ? prevLocation : url.home)
 
     }catch(err){

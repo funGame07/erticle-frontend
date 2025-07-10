@@ -1,0 +1,11 @@
+#server__error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: gray;
+}
+#server__error img{
+    width: clamp(200px, 200px + 10vh, 600px);
+}

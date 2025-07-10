@@ -109,10 +109,17 @@ function useEditor(editFieldId) {
     // format image
     async function formatImage(event, cb){
          const selection = window.getSelection()
-        if(!selection.rangeCount) return;
+        // if(!selection.rangeCount) return;
         
+        console.log('b')
+        console.log(editField)
         const range = selection.getRangeAt(0)
+        if(!editField){
+            editField = document.getElementById(editFieldId)
+        }
         if(!editField?.contains(range.startContainer)) return
+
+        console.log('a')
 
         const fragment = range.extractContents()
         console.log(fragment)

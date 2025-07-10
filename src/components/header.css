@@ -1,0 +1,70 @@
+.idx-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.idx-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.idx-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.idx-logo-icon {
+    width: 48px;
+    height: 48px;
+    /* background: linear-gradient(135deg, var(--primary), var(--secondary)); */
+    border-radius: 16px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.25);
+    position: relative;
+    object-fit: contain;
+    /* overflow: hidden; */
+}
+
+.idx-logo-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: idx-shine 3s infinite;
+}
+
+@keyframes idx-shine {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.idx-logo-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+    z-index: 1;
+}
+
+.idx-logo-text {
+    font-size: 28px;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--text), var(--text-light));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+}

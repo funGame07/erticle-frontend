@@ -4,6 +4,7 @@ import SearchBar from '../components/SearchBar'
 import ArticleCard from '../components/ArticleCard'
 
 import Loading from '../components/Loading'
+import ServerError from '../components/ServerError'
 
 import './css/article.css'
 import { useEffect, useState } from 'react'
@@ -11,11 +12,10 @@ import { axiosArticle } from '../api/axios'
 
 function Articles() {
   const [articles, setArticles] = useState([])
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
+  const [err, setErr] = useState(false)
 
   useEffect(() =>{
-    setLoading(true)
-    
     async function getArticles(){
       try{
         const response = await axiosArticle.get('/get')
@@ -34,18 +34,20 @@ function Articles() {
   return (
     <AppLayout>
         <SearchBar />
-        
-        <div id="article__main">
-          {articles.length === 0 && <span>No content</span> }
-          {
-            loading ? 
-            <Loading />
-            :
-            articles.map((article, i) =>{
-              return <ArticleCard article={article} key={i}/>
-            })
-          }
-        </div>
+
+        {err && !loading && <ServerError /> }
+
+        {!err && loading && <Loading /> }
+
+        {!err && !loading && 
+          <div id="article__main">
+            {
+              articles.map((article, i) =>{
+                return <ArticleCard article={article} key={i}/>
+              })
+            }
+          </div>
+        }
     </AppLayout>
   )
 }

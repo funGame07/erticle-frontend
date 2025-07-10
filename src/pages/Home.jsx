@@ -2,14 +2,14 @@ import React, { useEffect } from 'react'
 import AppLayout from '../components/layouts/AppLayout'
 
 
-import Dashboard from './../components/Dashboard'
+import Dashboard from './Dashboard'
 
 function Home() {
 
   return (
     <AppLayout>
       {/* <Dashboard /> */}
-        Home page
+        <Dashboard />
     </AppLayout>
   )
 }

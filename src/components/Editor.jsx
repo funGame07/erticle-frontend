@@ -18,12 +18,13 @@ import './editor.css'
 import dragElement from '../utils/editor';
 
 function Editor({editFieldId, imageCb}) {
-  const editor = useEditor()
+  const editor = useEditor(editFieldId)
   const elditorFunc = new ElditorFunc()
 
   useEffect(() =>{
     dragElement(document.getElementById("editor"));
-    editor.setEditField(editFieldId)
+      editor.setEditField(editFieldId)
+    
   }, [])
 
   return (

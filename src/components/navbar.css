@@ -1,8 +1,11 @@
 
 .sidebar{
     width: max(210px, 16%);
-    background-color: var(--BG-SIDEBAR);
-    color: white;
+    /* background-color: var(--BG-SIDEBAR); */
+    /* color: white; */
+    background-color: #fff;
+    border-right: 3px solid rgba(0, 109, 252, 0.144);
+    border-bottom: 3px solid rgba(0, 109, 252, 0.144);
     /* margin: 1rem .5rem; */
     height: calc(100vh);
     /* border-radius: .5rem; */
@@ -49,6 +52,7 @@
 .sidebar__logo .sidebar__title{
     font-weight: 600;
     font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .sidebar.collapse .sidebar__title{
@@ -106,17 +110,18 @@
     display: flex;
     align-items: center;
     gap: .5rem;
-    padding: .3rem .5rem;
+    padding: .5rem;
     transition: color 1s ease;
 }
 
 .sidebar__nav .nav__link:hover{
-    background-color: #fff;
+    background-image: linear-gradient(to bottom right, rgba(0, 72, 255, 0.251), rgba(0, 0, 0, 0));
+    /* background-color: #1132ee; */
     border-radius: .5rem;
 }
 
 .sidebar__nav .nav__link:hover span{
-    color: rgb(255, 71, 71);
+    color: rgb(71, 169, 255);
     font-weight: 700;
 }
 
@@ -179,20 +184,20 @@
 
 .sidebar .sidebar__nav .nav__link.active,
 .sidebar .sidebar__nav .nav__link:focus{
-    background-color: white;
+    background-image: linear-gradient(to bottom right, rgba(0, 72, 255, 0.251), rgba(0, 0, 0, 0));
     border-radius: .5rem;
     /* color: var(--FONT-SIDEBAR); */
-    font-weight: 700;
-    color: rgb(255, 71, 71);
+    font-weight: 900;
+    color: rgb(71, 169, 255);
 }
 
 .sidebar.collapse .sidebar__nav .nav__link.active,
 .sidebar.collapse .sidebar__nav .nav__link:focus{
-    background-color: white;
+    background-image: linear-gradient(to bottom right, rgba(0, 72, 255, 0.251), rgba(0, 0, 0, 0));
     border-radius: .5rem;
     /* color: var(--FONT-SIDEBAR); */
-    font-weight: 700;
-    color: rgb(255, 71, 71);
+    font-weight: 900;
+    color: rgb(71, 169, 255);
 }
 
 .sidebar__nav{
@@ -303,7 +308,7 @@
     color: #151A2D;
     /* end here */
     inset: 0;
-    width: 60%;
+    width: 70%;
     border-right: 2px solid grey;
     z-index: 1;
 }

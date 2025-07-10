@@ -83,7 +83,6 @@ function ArticlePage() {
             else setTotalLikes(totalLikes + 1)
 
             setIsLiked(!data.alreadyLiked)
-            console.log(data)
         }catch(err){
             console.log(err)
         }

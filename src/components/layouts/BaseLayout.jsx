@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 
 import './baseLayout.css'
 import url from '../../utils/urlConstants'
+import Header from '../Header'
 
 function BaseLayout({children}) {
 
@@ -13,6 +14,8 @@ function BaseLayout({children}) {
           <span className='logo__title'>Erticle</span>
         </Link>
       </header>
+
+      {/* <Header /> */}
       
       {children}
     </div>
