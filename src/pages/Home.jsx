@@ -61,7 +61,7 @@ function Home() {
 
             <div className="hp-featured-grid fade-in">
               {
-              !loading && 
+              !loading && articles.length > 0 &&
                 <Link to={url.home}>
                 <article className="hp-featured-main">
                     <img src={imgURLParser(articles[0]?.thumbnail)} alt="Featured article" />
