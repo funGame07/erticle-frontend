@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', () =>{
     });
 
     // Header background on scroll
-    window.addEventListener('scroll', () => {
-        const header = document.querySelector('.idx-header');
-        if (window.scrollY > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-        } else {
-            header.style.background = 'rgba(255, 255, 255, 0.8)';
-        }
-    });    
+    // window.addEventListener('scroll', () => {
+    //     const header = document.querySelector('.idx-header');
+    //     if (window.scrollY > 100) {
+    //         header.style.background = 'rgba(255, 255, 255, 0.95)';
+    //     } else {
+    //         header.style.background = 'rgba(255, 255, 255, 0.8)';
+    //     }
+    // });    
 })

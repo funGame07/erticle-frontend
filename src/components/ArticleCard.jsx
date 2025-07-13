@@ -6,6 +6,7 @@ import imgURLParser from "../utils/imgURLParser";
 import { useNavigate } from "react-router-dom";
 import url from "../utils/urlConstants";
 import formatDate from "../utils/formatDate";
+import overviewCut from "../utils/overviewCut";
 
 function ArticleCard({article}) {
     const navigate = useNavigate()
@@ -29,7 +30,7 @@ function ArticleCard({article}) {
 
             <div className='content__mid'>
                 {
-                    article.overview?.length > 90 ? article.overview.substring(0, 90) + '...': article.overview
+                    overviewCut(article.overview, 90)
                 }
             </div>
 

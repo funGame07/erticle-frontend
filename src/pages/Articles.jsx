@@ -17,6 +17,8 @@ function Articles() {
 
   useEffect(() =>{
     async function getArticles(){
+      setLoading(true)
+      setErr(false)
       try{
         const response = await axiosArticle.get('/get')
         const data = response.data
@@ -24,6 +26,7 @@ function Articles() {
         setArticles(data.articles)
       }catch(err){
         console.log(err)
+        setErr(true)
       }finally{
         setLoading(false)
       }

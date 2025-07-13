@@ -50,6 +50,19 @@
   --BUTTON-OUTLINE-HOVER: #151A2D;
   --COLOR-TEXTAREA-PROFILE: #151A2D;
   --aside-color: rgba(218, 210, 210, 0.4);
+
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --accent-color: #f59e0b;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --border-color: #e5e7eb;
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-heavy: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 body{
