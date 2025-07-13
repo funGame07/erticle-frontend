@@ -64,15 +64,15 @@ function Home() {
               !loading && 
                 <Link to={url.home}>
                 <article className="hp-featured-main">
-                    <img src={imgURLParser(articles[0].thumbnail)} alt="Featured article" />
+                    <img src={imgURLParser(articles[0]?.thumbnail)} alt="Featured article" />
                     <div className="hp-featured-main-content">
                         <span className="hp-category">Technology</span>
-                        <h3>{articles[0].title}</h3>
-                        <p>{overviewCut(articles[0].overview)}</p>
+                        <h3>{articles[0]?.title}</h3>
+                        <p>{overviewCut(articles[0]?.overview)}</p>
                         <div className="hp-article-meta">
-                            <span>By {articles[0].author.username}</span>
+                            <span>By {articles[0]?.author.username}</span>
                             <span>•</span>
-                            <span>{formatDate(articles[0].createdAt)}</span>
+                            <span>{formatDate(articles[0]?.createdAt)}</span>
                         </div>
                     </div>
                 </article>
